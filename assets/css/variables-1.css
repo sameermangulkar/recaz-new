@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap");
+
+:root {
+    --font-base: "Open Sans", sans-serif;
+    --font-running: "Dancing Script", cursive;
+    --bgColor: #79bae2;
+    --hedrBgColor: #444444;
+    --white: #fff;
+    --red: #dc3545;
+    --font-weight: 300;
+    --color-bg: #eceaf0;
+    --brandColor: #e3010f;
+    --footr-bg: #1b1423;
+}

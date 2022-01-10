@@ -70,24 +70,58 @@ body {
     display: flex;
 }
 
-.header .container h1 {
-    width: 300px;
+.header .container h3 {
+    width: 350px;
     color: gray;
     font-family: var(--heading-font);
-    font-size: 1.5rem;
+    font-size: 31px;
+    line-height: 17px;
+    margin-top: 7px;
 }
 
-.header .container h1 span img{
-    width: 20px;
-    height: 20px;
+.header .container h3 img{
+    width: 45px;
+    height: 45px;
     display: block;
     float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8px;
     margin-right: 5px;
+    margin-top: -3px;
 }
+
+.header .container h3 span{
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 5.2px;
+}
+
+.footer .footr-column-1 h3 {
+    font-family: var(--heading-font);
+    font-size: 28px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    color: rgb(82, 80, 80);
+}
+
+.footer .footr-column-1 {
+    padding-top: 30px;
+}
+
+.footer .footr-column-1 h3 span {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 5.2px;
+}
+
+.footer .footr-column-1 h3 img {
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    margin-top: -3px;
+    float: left;
+    display: block;
+}
+
+
 
 .header nav {
     position: relative;
@@ -451,7 +485,7 @@ canvas {
 #about {
     background: #e6c87b;
     height: 540px;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 .about{
@@ -669,7 +703,7 @@ canvas {
     text-align: center;
 }
 
-#client-title h2::after {
+#clients .container #client-title h2::after {
     content: "";
     width: 120px;
     height: 2px;
@@ -749,6 +783,7 @@ canvas {
 
 .img-column .client-info h4 {
     font-size: 21px;
+    font-family: var(--font-base);
     align-items: center;
     text-align: start;
     justify-content: center;

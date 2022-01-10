@@ -2,6 +2,7 @@
 
 :root {
     --font-base: "Open Sans", sans-serif;
+    --heading-font: 'Poppins', sans-serif;
     --font-running: "Dancing Script", cursive;
     --bgColor: #79bae2;
     --hedrBgColor: #444444;

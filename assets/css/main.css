@@ -708,10 +708,11 @@ canvas {
     width: 120px;
     height: 2px;
     background: #ff8664;
-    display: inline-block;
+    display: block;
     position: absolute;
     left: 730px;
     top: 150px;
+    
 }
 
 

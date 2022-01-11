@@ -784,6 +784,7 @@ canvas {
 
 .img-column .client-info h4 {
     font-size: 21px;
+    font-weight: lighter;
     font-family: var(--font-base);
     align-items: center;
     text-align: start;

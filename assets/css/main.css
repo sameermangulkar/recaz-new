@@ -1143,14 +1143,20 @@ canvas {
 
 .food-box .food-content ul li:hover>ul {
     display: block;
+        font-family: var(--font-base);
+        font-weight: lighter;
 }
 
 .food-box .food-content ul ul li a {
     color: #fff;
     display: block;
+     font-family: var(--font-base);
+     font-weight: lighter;
 }
 
 .food-box .food-content ul ul li a:hover {
+    font-family: var(--font-base);
+    font-weight: lighter;
     background: #e6c87b;
     color: #1b1423;
 }

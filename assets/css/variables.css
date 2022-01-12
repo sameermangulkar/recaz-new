@@ -2,13 +2,16 @@
 
 :root {
     --font-base: "Open Sans", sans-serif;
+    --heading-font: 'Poppins', sans-serif;
     --font-running: "Dancing Script", cursive;
     --bgColor: #79bae2;
     --hedrBgColor: #444444;
     --white: #fff;
-    --red: #dc3545;
+    --red: #ed3036;
     --font-weight: 300;
     --color-bg: #eceaf0;
     --brandColor: #e3010f;
     --footr-bg: #1b1423;
+    --border-color: rgba(14, 13, 13, 0.3)
+
 }

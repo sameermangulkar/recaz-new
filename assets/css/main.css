@@ -222,10 +222,8 @@ body {
     transition: 0.3s;
 }
 
-.header nav ul li:hover>ul {
-    visibility: visible;
-    top: 152%;
-    opacity: 1;
+.header nav ul li:hover > ul {
+    display: block;
 }
 
 .header nav ul ul li {
@@ -331,7 +329,6 @@ canvas {
 .text .letter {
     display: inline-block;
     position: relative;
-    float: left;
     transform: translateZ(25px);
     transform-origin: 50% 50% 25px;
 }
@@ -657,7 +654,6 @@ canvas {
     align-items: center;
     font-family: var(--heading-font);
     color: gray;
-
 }
 
 .about-box .about-content h5 a {
@@ -672,7 +668,6 @@ canvas {
 .about-box .about-content p {
     line-height: 24px;
     background: var(--white);
-
 }
 
 .about-box:hover .about-small-box img {
@@ -807,7 +802,6 @@ canvas {
 }
 
 .img-column .img img {
-
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1240,7 +1234,6 @@ canvas {
     font-size: 9px;
     font-weight: normal;
     letter-spacing: 8.2px;
-
 }
 
 .footer .footr-column-1 h3 img {

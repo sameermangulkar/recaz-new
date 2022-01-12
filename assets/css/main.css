@@ -223,7 +223,9 @@ body {
 }
 
 .header nav ul li:hover > ul {
-    display: block;
+    visibility: visible;
+    top: 150%;
+    transition: 0.3s
 }
 
 .header nav ul ul li {

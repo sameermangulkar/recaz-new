@@ -44,6 +44,10 @@ body {
 }
 
 /* Header-Start */
+#header{
+    display: flex;
+}
+
 .header {
     width: 100vw;
     position: fixed;
@@ -209,8 +213,8 @@ body {
 }
 
 .header nav ul ul {
-    width: 200px;
-    height: 140px;
+    width: 250px;
+    height: 320px;
     padding: 10px;
     background: #fff;
     border-radius: 4px;
@@ -222,10 +226,18 @@ body {
     transition: 0.3s;
 }
 
-.header nav ul li:hover > ul {
+.header-bg.scroll nav ul ul {
+    top: calc(100% + 10px);
+}
+
+.header nav ul li:hover>ul {
     visibility: visible;
-    top: 150%;
+    top: 220%;
     transition: 0.3s
+}
+
+.header-bg.scroll nav ul li:hover>ul {
+    top: 160%;
 }
 
 .header nav ul ul li {
@@ -252,15 +264,15 @@ body {
 /* Header-End */
 
 /* home-page-start */
+#home{
+    display: flex;
+}
+
 canvas {
-    top: 50px;
-    /* bottom: 0; */
     left: 45px;
     width: 1260px;
-    height: 520px;
-    margin-bottom: 22px;
+    height: 100vh;
     position: relative;
-    /* background-color: rgba(0, 0, 0, 0.8); */
     overflow: hidden;
     z-index: 30;
 }
@@ -378,8 +390,10 @@ canvas {
 
 /* slider-page-start */
 #slider-page {
-    width: 1366px;
-    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 20px;
+    display: flex;
     position: absolute;
     top: 0;
     z-index: 15;
@@ -519,27 +533,28 @@ canvas {
 #about {
     background: #e6c87b;
     height: 540px;
-    padding-top: 100px;
+    display: flex;
+    padding-top: 60px; 
 }
 
-.about {
+/* .about {
     margin-top: 35px;
-}
+} */
 
 /* .section-bg{
     padding: 90px 0px;
 } */
 
-.section-bg::before {
+/* .section-bg::before {
     content: "";
     position: absolute;
     bottom: 60px;
     top: 60px;
     left: 0;
     right: 0;
-    /* transform: skewY(-3deg); */
+     transform: skewY(-3deg);
     z-index: 1;
-}
+} */
 
 .row-1 .content {
     width: 570px;
@@ -595,6 +610,8 @@ canvas {
 /* about-boxes-section-start */
 #about-box {
     background-color: rgb(240, 231, 231);
+    display: flex;
+    justify-content: center;
 }
 
 .about-box {
@@ -689,6 +706,7 @@ canvas {
 
 #clients {
     padding-bottom: 40px;
+    display: flex;
 }
 
 .clients {
@@ -895,6 +913,7 @@ canvas {
 #contact {
     background: #ffffff;
     padding-top: 80px;
+    display: flex;
     background-image: url(../images/bg-world.png);
     background-repeat: no-repeat;
     position: relative;
@@ -1205,6 +1224,9 @@ canvas {
 /* food-boxes-section-end */
 
 /*------ section-footer-start ------*/
+#footer{
+    display: flex;
+}
 
 .footer {
     width: 100%;
@@ -1350,3 +1372,4 @@ canvas {
 .home-page-txt {
     background-color: green;
 }
+/* footer-section-end */

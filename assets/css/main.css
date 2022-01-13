@@ -199,7 +199,7 @@ body {
 }
 
 .header nav ul li a:hover {
-    color: var(--red);
+    color: var(--brandColor);
     text-decoration: none;
 }
 
@@ -273,11 +273,13 @@ canvas {
 .header-content .container {
     display: flex;
     height: 25vh;
+    border-radius: 4px;
     align-items: center;
     justify-content: center;
     -webkit-backface-visibility: visible;
     -moz-backface-visibility: visible;
     backface-visibility: visible;
+    background-color: var(--box-black-bg);
 }
 
 .header-content .container h1 {
@@ -289,13 +291,11 @@ canvas {
 }
 
 .header-content .container h2 {
-    font-family: var(--heading-font);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 35px;
     color: var(--white);
-    font-family: var(--font-running);
     -webkit-backface-visibility: visible;
     -moz-backface-visibility: visible;
     backface-visibility: visible;
@@ -317,7 +317,7 @@ canvas {
 
 .text .word {
     position: absolute;
-    width: 420px;
+    width: 480px;
     opacity: 0;
 }
 
@@ -356,7 +356,7 @@ canvas {
 }
 
 .text .pomegranate {
-    color: var(--red);
+    color: var(--brandColor);
 }
 
 .text .green {
@@ -386,6 +386,8 @@ canvas {
 
 #slider-page .slider {
     background: rgba(0, 0, 0, 0.8);
+    transition: all ease-in 200ms;
+    animation-delay: 200ms;
 }
 
 #slider-page .slider img {
@@ -428,9 +430,10 @@ canvas {
     padding: 16px;
     font-size: 18px;
     font-weight: bold;
-    color: var(--red);
+    color: var(--brandColor);
     user-select: none;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
 }
 
 .prev {
@@ -445,7 +448,7 @@ canvas {
 
 .prev:hover,
 .next:hover {
-    background: var(--red);
+    background: var(--brandColor);
     color: #f2f2f2;
 }
 
@@ -473,7 +476,7 @@ canvas {
 
 #slider-page .dot-sect span:nth-child(1),
 .dot:hover {
-    background: var(--red);
+    background: var(--brandColor);
 }
 
 .fade {
@@ -656,7 +659,7 @@ canvas {
 }
 
 .about-box .about-content h5 a:hover {
-    color: var(--red);
+    color: var(--brandColor);
 }
 
 .about-box .about-content p {
@@ -665,7 +668,7 @@ canvas {
 }
 
 .about-box:hover .about-small-box img {
-    border: 6px solid var(--red);
+    border: 6px solid var(--brandColor);
     transition: all ease-in 200ms;
     z-index: 5;
 }
@@ -724,7 +727,7 @@ canvas {
 .clients .container .row #client-filter li:hover,
 .clients .container .row #client-filter li:first-child,
 .clients .container .row #client-filter a:hover {
-    background: var(--red);
+    background: var(--brandColor);
     color: white;
     text-decoration: none;
 }
@@ -744,7 +747,7 @@ canvas {
     content: "";
     width: 120px;
     height: 2px;
-    background: var(--red);
+    background: var(--brandColor);
     display: block;
     position: absolute;
     left: 730px;
@@ -806,7 +809,7 @@ canvas {
 .img-column .client-info {
     width: 100%;
     height: 80px;
-    background: var(--red);
+    background: var(--brandColor);
     font-family: var(--font-base);
     padding: 10px 10px 0px 10px;
     color: var(--white);
@@ -890,7 +893,7 @@ canvas {
     height: 15px;
     border-radius: 25px;
     border: 3px solid black;
-    background: var(--red);
+    background: var(--brandColor);
     position: absolute;
 }
 
@@ -956,7 +959,7 @@ canvas {
     display: block;
     width: 50px;
     height: 3px;
-    background: var(--red);
+    background: var(--brandColor);
     bottom: 0;
     left: calc(50% - 25px);
 }
@@ -994,7 +997,7 @@ canvas {
     font-size: 32px;
     margin: 0 auto;
     border: 2px dotted #f8d4d5;
-    color: var(--red);
+    color: var(--brandColor);
 }
 
 .bi {
@@ -1058,7 +1061,7 @@ canvas {
 .form-group button {
     margin-top: 15px;
     margin-bottom: 0;
-    background: var(--red);
+    background: var(--brandColor);
     color: #fff;
     display: block;
     margin-left: 190px;
@@ -1158,7 +1161,7 @@ canvas {
 
 .food-box .food-content ul ul li {
     width: 250px;
-    background: var(--red);
+    background: var(--brandColor);
     margin-bottom: 1px;
 }
 /* 
@@ -1284,12 +1287,12 @@ canvas {
 
 .footer .footr-column-2 ul span i,
 .footer .footr-column-3 ul span i {
-    color: var(--red);
+    color: var(--brandColor);
 }
 
 .footer .footr-column-2 ul li a:hover,
 .footer .footr-column-3 ul li a:hover {
-    color: var(--red);
+    color: var(--brandColor);
 }
 
 .footer .footr-bootm {
@@ -1326,7 +1329,11 @@ canvas {
 }
 
 .footer .footr-bootm ul li a:hover {
-    color: var(--red);
+    color: var(--brandColor);
 }
 
 /* footer-section-end */
+
+.home-page-txt {
+    background-color: green;
+}

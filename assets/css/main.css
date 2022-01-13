@@ -914,6 +914,7 @@ canvas {
     background: #ffffff;
     padding-top: 80px;
     display: flex;
+    justify-content: center;
     background-image: url(../images/bg-world.png);
     background-repeat: no-repeat;
     position: relative;

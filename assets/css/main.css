@@ -1000,6 +1000,10 @@ canvas {
     margin-top: 650px;
 }
 
+.no-margin{
+    margin-top: 100px;
+}
+
 .contact-section .contact-sect-title {
     padding-bottom: 25px;
     position: relative;

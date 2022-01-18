@@ -9,6 +9,9 @@
     --color-bg: #eceaf0;
     --brandColor: #e3010f;
     --footer-bg: #1b1423;
+    --header-button-color: darkgray;
+    --footer-button-color: black;
+    --footer-submit-button: #f7bd00;
     --border-color: rgba(14, 13, 13, 0.3);
     --box-black-bg: rgba(14, 13, 13, 0.5);
 }

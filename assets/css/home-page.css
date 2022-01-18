@@ -1,0 +1,141 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+#slide-show {
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    min-width: 100vw !important;
+}
+
+.slide-text {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.slide-text b {
+    font-weight: 400;
+}
+
+.slide-text h2 {
+    font-weight: 200;
+    font-family: Raleway;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.slidex {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    z-index: -1;
+}
+
+.activx {
+    opacity: 1;
+}
+
+.slideshow-nav {
+    position: absolute;
+    bottom: 50%;
+    width: 100vw;
+    min-width: 100vw !important;
+    font-size: 30px;
+    background: transparent;
+}
+
+.previousx {
+    float: left;
+}
+
+.nextx {
+    float: right;
+}
+
+.bg1,
+.bg2,
+.bg3,
+.bg4 {
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-image: url("../images/home-page-slider/slider-1.png");
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    min-width: 100vw !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg2 {
+    background-image: url("../images/home-page-slider/slider-2.png");
+}
+
+.bg3 {
+    background-image: url("../images/home-page-slider/slider-3.png");
+}
+
+.bg4 {
+    background-image: url("../images/home-page-slider/slider-4.png");
+}
+
+.slider-center {
+    position: absolute;
+    height: 15%;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    transition: all 0.4s;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    background: red;
+    border-radius: 4px;
+}
+
+
+
+.arrow a {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: rgb(14, 13, 13);
+    transition: all 0.4s;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 0 20px 0;
+}
+
+.arrow a:hover {
+    color: rgb(228, 7, 7);
+}
+
+
+/* #unten {
+    width: 100vw;
+    min-width: 100vw !important;
+    height: 800px;
+    background-color: #999;
+
+
+} */

@@ -2,6 +2,8 @@
     display: none;
 }
 
+@import url(./variables.css);
+
 #slide-show {
     height: 100vh;
     min-height: 100vh;
@@ -12,7 +14,7 @@
 
 .slide-text {
     font-size: 20px;
-    color: #fff;
+    color: var(--white);
     text-align: center;
 }
 
@@ -23,11 +25,24 @@
 .slide-text h2 {
     font-weight: 200;
     font-family: Raleway;
+    font-weight: 600;
     font-size: 50px;
     text-align: center;
     line-height: 60px;
     letter-spacing: 1px;
-    color: #fff;
+    color: var(--white);
+    display: none;
+
+        --x-offset: -0.0625em;
+        --y-offset: 0.0625em;
+        --stroke: 0.025em;
+        --background-color: black;
+        --stroke-color: black;
+
+        text-shadow: var(--x-offset) var(--y-offset) 0px var(--background-color),
+
+        calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
+
 }
 
 .slidex {
@@ -51,10 +66,16 @@
 
 .previousx {
     float: left;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 3px 3px 3px 0px;
 }
 
 .nextx {
     float: right;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 3px 0px 3px 3px;
 }
 
 .bg1,
@@ -105,21 +126,24 @@
 
 .nav-link {
     transition: all 0.4s;
-    padding: 15px;
-    color: #fff;
-    font-size: 20px;
-    background: red;
-    border-radius: 4px;
+    color: var(--white);
+    font-size: 16px;
+    background: var(--text-base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
+.nav-link:hover{
+    background: var(--brand-color);
+    color: var(--white);
+}
 
 .arrow a {
     display: block;
     position: absolute;
     bottom: 0;
     left: 50%;
-    color: rgb(14, 13, 13);
     transition: all 0.4s;
     cursor: pointer;
     font-size: 20px;
@@ -127,7 +151,51 @@
 }
 
 .arrow a:hover {
-    color: rgb(228, 7, 7);
+    color: var(--brand-color);
+}
+
+/* body {
+    font-family: system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+h1 {
+    font-size: calc(1em + 30vmin);
+    font-weight: 900;
+    color: tomato;
+
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: lightblue;
+
+    text-shadow:
+
+        var(--x-offset) var(--y-offset) 0px var(--background-color),
+
+        calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
+
+}
+
+/* for browsers that support spread, added in
+https://drafts.csswg.org/css-text-decor-4/#text-shadow-property
+currently: none browsers! none of them!
+I can't even find a test: 
+https://wpt.fyi/results/css/css-text-decor */
+@supports (text-shadow: 1px 1px 1px 1px black) {
+    h1 {
+        text-shadow:
+
+            var(--x-offset) var(--y-offset) 0px 0px var(--background-color),
+
+            var(--x-offset) var(--y-offset) var(--stroke) 0px var(--stroke-color);
+
+    }
 }
 
 

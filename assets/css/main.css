@@ -535,7 +535,7 @@ canvas {
 
 /* about-start */
 #about {
-    background: var(--about-bg-color);
+    background: var(--footer-bg);
     height: 540px;
     padding-top: 60px;
 }
@@ -546,7 +546,6 @@ canvas {
     height: auto;
     margin: 0 auto;
 }
-
 
 .row-1 {
     display: flex;
@@ -559,40 +558,37 @@ canvas {
 .row-1 .content {
     width: 570px;
     z-index: 2;
-
 }
 
 .row-1 .content h3 {
     font-family: var(--heading-font);
-    color: var(--text-base-color);
+    color: var(--white);
     font-size: 32px;
     margin-bottom: 12px;
 }
 
 .row-1 .content p {
     font-family: var(--font-base);
+    color: var(--white);
     line-height: 20px;
-    margin-bottom: 12px;
+    padding-right: 20px;
+    text-align: justify;
 }
 
 .row-1 .img-box {
     width: 530px;
     display: flex;
-    padding: 20px;
+    padding-left: 20px;
     z-index: 3;
 }
 
 .row-1 .img-box .about-img {
-    vertical-align: middle;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     position: relative;
 }
 
-.row-1 .img-box .about-img img {
-    width: 640px;
-}
 
 .row-1 .img-box .about-img span img {
     width: 150px;
@@ -687,6 +683,7 @@ canvas {
 
 .about-box .about-content p {
     line-height: 24px;
+    text-align: justify;
 }
 
 .about-box:hover .about-small-box img {
@@ -704,7 +701,7 @@ canvas {
     opacity: 1;
 }
 
-.padding-top{
+.padding-top {
     padding-top: 90px;
 }
 
@@ -931,17 +928,18 @@ canvas {
     padding-bottom: 5px;
     text-transform: uppercase;
     position: relative;
+    display: inline-block;
 }
 
 .contact-section .contact-sect-title h2::after {
     content: "";
     position: absolute;
     display: block;
-    width: 50px;
+    width: 20px;
     height: 3px;
     background: var(--brand-color);
     bottom: 0;
-    left: calc(50% - 25px);
+    left: 0;
 }
 
 .contact-section .contact-sect-title p {
@@ -1289,6 +1287,7 @@ canvas {
 .footr-column-4 input[type="email"] {
     width: 270px;
     height: 30px;
+    font-size: 14px;
     padding: 0 20px;
     background: var(--white);
     border: none;
@@ -1466,6 +1465,9 @@ canvas {
     background-color: green;
 }
 
+
+.text-color-white {
+    color: var(--white) !important;
+}
+
 /* footer-section-end */
-
-

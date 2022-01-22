@@ -1,0 +1,214 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+@import url(./variables.css);
+
+#slide-show {
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    min-width: 100vw !important;
+}
+
+.slide-text {
+    font-size: 20px;
+    color: var(--white);
+    text-align: center;
+}
+
+.slide-text b {
+    font-weight: 400;
+}
+
+.slide-text h2 {
+    font-weight: 200;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: var(--white);
+    display: none;
+
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: black;
+    --stroke-color: black;
+
+    text-shadow: var(--x-offset) var(--y-offset) 0px var(--background-color),
+
+        calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
+
+}
+
+.slidex {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    z-index: -1;
+}
+
+.activx {
+    opacity: 1;
+}
+
+.slideshow-nav {
+    position: absolute;
+    bottom: 50%;
+    width: 100vw;
+    min-width: 100vw !important;
+    font-size: 30px;
+    background: transparent;
+}
+
+.previousx {
+    float: left;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 3px 3px 3px 0px;
+}
+
+.nextx {
+    float: right;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 3px 0px 3px 3px;
+}
+
+.bg1,
+.bg2,
+.bg3,
+.bg4,
+.bg5 {
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-image: url("../images/home-page-slider/slider-home-2.jpg");
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    min-width: 100vw !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg2 {
+    background-image: url("../images/home-page-slider/slider-home-1.jpg");
+}
+
+.bg3 {
+    background-image: url("../images/home-page-slider/slider-home-3.png");
+}
+
+.bg4 {
+    background-image: url("../images/home-page-slider/slider-home-4.png");
+}
+
+.bg5 {
+    background-image: url("../images/home-page-slider/slider-home-5.jpg");
+}
+
+.slider-center {
+    position: absolute;
+    height: 15%;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    transition: all 0.4s;
+    color: var(--white);
+    font-size: 16px;
+    background: var(--text-base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link:hover {
+    background: var(--brand-color);
+    color: var(--white);
+}
+
+.arrow a {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: all 0.4s;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 0 20px 0;
+}
+
+.arrow a:hover {
+    color: var(--brand-color);
+}
+
+/* body {
+    font-family: system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+h1 {
+    font-size: calc(1em + 30vmin);
+    font-weight: 900;
+    color: tomato;
+
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: lightblue;
+
+    text-shadow:
+
+        var(--x-offset) var(--y-offset) 0px var(--background-color),
+
+        calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
+
+}
+
+/* for browsers that support spread, added in
+https://drafts.csswg.org/css-text-decor-4/#text-shadow-property
+currently: none browsers! none of them!
+I can't even find a test: 
+https://wpt.fyi/results/css/css-text-decor */
+@supports (text-shadow: 1px 1px 1px 1px black) {
+    h1 {
+        text-shadow:
+
+            var(--x-offset) var(--y-offset) 0px 0px var(--background-color),
+
+            var(--x-offset) var(--y-offset) var(--stroke) 0px var(--stroke-color);
+
+    }
+}
+
+
+/* #unten {
+    width: 100vw;
+    min-width: 100vw !important;
+    height: 800px;
+    background-color: #999;
+
+
+} */

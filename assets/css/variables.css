@@ -2,13 +2,12 @@
 
 :root {
     --heading-font: "Poppins", sans-serif;
-    --bgColor: #79bae2;
-    --headerBgColor: #444444;
     --white: #fff;
     --font-weight: 300;
-    --color-bg: #eceaf0;
-    --brandColor: #e3010f;
+    --brand-color: #e3010f;
+    --about-bg-color:#e6c87b;
     --footer-bg: #1b1423;
+    --text-base-color: #1b1423;
     --border-color: rgba(14, 13, 13, 0.3);
     --box-black-bg: rgba(14, 13, 13, 0.5);
 }

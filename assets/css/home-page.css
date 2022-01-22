@@ -31,7 +31,6 @@
     line-height: 60px;
     letter-spacing: 1px;
     color: var(--white);
-    display: none;
 
     --x-offset: -0.0625em;
     --y-offset: 0.0625em;
@@ -40,9 +39,7 @@
     --stroke-color: black;
 
     text-shadow: var(--x-offset) var(--y-offset) 0px var(--background-color),
-
         calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
-
 }
 
 .slidex {
@@ -82,12 +79,15 @@
 .bg2,
 .bg3,
 .bg4,
-.bg5 {
+.bg5,
+.bg6,
+.bg7,
+.bg8 {
     background-repeat: no-repeat !important;
     background-attachment: scroll !important;
     background-position: center center !important;
     background-size: cover !important;
-    background-image: url("../images/home-page-slider/slider-home-2.jpg");
+    background-image: url("../images/sliders/1-general.jpeg");
     height: 100vh;
     min-height: 100vh;
     overflow: hidden;
@@ -99,19 +99,28 @@
 }
 
 .bg2 {
-    background-image: url("../images/home-page-slider/slider-home-1.jpg");
+    background-image: url("../images/sliders/2-paint-chemicals.jpeg");
 }
 
 .bg3 {
-    background-image: url("../images/home-page-slider/slider-home-3.png");
+    background-image: url("../images/sliders/3-texttiles-chimicals.jpeg");
 }
 
 .bg4 {
-    background-image: url("../images/home-page-slider/slider-home-4.png");
+    background-image: url("../images/sliders/4-food-chemicals.jpeg");
 }
 
 .bg5 {
-    background-image: url("../images/home-page-slider/slider-home-5.jpg");
+    background-image: url("../images/sliders/5-detergent-chimicals.jpeg");
+}
+.bg6 {
+    background-image: url("../images/sliders/6-cosmetic-chimicals.jpeg");
+}
+.bg7 {
+    background-image: url("../images/sliders/7-cosmetics.jpeg");
+}
+.bg8 {
+    background-image: url("../images/sliders/8-texttile-chemicals.jpeg");
 }
 
 .slider-center {
@@ -179,12 +188,8 @@ h1 {
     --background-color: white;
     --stroke-color: lightblue;
 
-    text-shadow:
-
-        var(--x-offset) var(--y-offset) 0px var(--background-color),
-
+    text-shadow: var(--x-offset) var(--y-offset) 0px var(--background-color),
         calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
-
 }
 
 /* for browsers that support spread, added in
@@ -194,15 +199,10 @@ I can't even find a test:
 https://wpt.fyi/results/css/css-text-decor */
 @supports (text-shadow: 1px 1px 1px 1px black) {
     h1 {
-        text-shadow:
-
-            var(--x-offset) var(--y-offset) 0px 0px var(--background-color),
-
+        text-shadow: var(--x-offset) var(--y-offset) 0px 0px var(--background-color),
             var(--x-offset) var(--y-offset) var(--stroke) 0px var(--stroke-color);
-
     }
 }
-
 
 /* #unten {
     width: 100vw;

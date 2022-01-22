@@ -534,6 +534,20 @@ canvas {
 
 /* slider-page-end */
 
+/* Banner-start */
+#banner{
+        height: 540px;
+}
+
+#banner img{
+    width: 100%;
+    height: 540px;
+    background-size: contain;
+}
+
+/* Banner-End */
+
+
 /* about-start */
 #about {
     background: var(--footer-bg);
@@ -644,7 +658,6 @@ canvas {
 .inner-img:hover {
     transform: scale(1.1);
 }
-
 
 .about-box .about-small-box {
     background: var(--white);
@@ -852,14 +865,22 @@ canvas {
 /* Testimonials-End */
 
 /* contact-section-start */
+#pre-contact-bg-img{
+    background-size: cover;
+    background-image: url(../images/contact-bg-img.jpg);
+    backdrop-filter: blur;
+    position: relative;
+}
+
+.text-white{
+    color: var(--white);
+}
+
 #contact {
-    padding-top: 110px;
+    
+    padding-top: 60px;
     display: flex;
     justify-content: center;
-    background-image: url(../images/bg-world.png);
-    background-position: center top;
-    /* background-repeat: no-repeat; */
-    position: relative;
 }
 
 .locations {

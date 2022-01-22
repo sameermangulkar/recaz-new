@@ -1,0 +1,38 @@
+.loader-container {
+    position: absolute;
+    inset: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 0.25em;
+    vertical-align: top;
+    transition: 0.3s color, 0.3s border, 0.3s transform, 0.3s opacity;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    background: url(../images/recaz-logo.png);
+    background-size: contain;
+    animation: loaderAnimation 1.2s infinite ease-in-out;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: inherit;
+    vertical-align: middle;
+    pointer-events: none;
+}
+
+@keyframes loaderAnimation {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}

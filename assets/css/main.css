@@ -130,8 +130,6 @@ body {
     margin-left: auto;
 }
 
-
-
 .header nav a {
     color: var(--text-base-color);
     display: block;
@@ -535,19 +533,18 @@ canvas {
 /* slider-page-end */
 
 /* Banner-start */
-#banner{
-        height: 540px;
+#banner {
+    height: 540px;
 }
 
 .banner-about-us {
     width: 100%;
     height: 540px;
-    background-image: url(../images/sliders/1-general.jpeg);
+    background: url(../images/sliders/1-general.jpeg) center center no-repeat;
     background-size: cover;
 }
 
 /* Banner-End */
-
 
 /* about-start */
 #about {
@@ -640,7 +637,6 @@ canvas {
     padding: 20px;
 }
 
-
 .about-box .about-box-img img {
     background: no-repeat;
     width: 335px;
@@ -650,7 +646,6 @@ canvas {
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
     transition: all ease-in 200ms;
 }
-
 
 .inner-img {
     transition: 0.3s;
@@ -673,6 +668,7 @@ canvas {
     top: 225px;
     transition: all ease-in 200ms;
     z-index: 12;
+    filter: grayscale(1);
 }
 
 .about-box .about-content {
@@ -716,8 +712,6 @@ canvas {
     transition: all ease-in 200ms;
     z-index: 5;
 }
-
-
 
 /* about-boxes-section-end */
 
@@ -873,12 +867,11 @@ canvas {
     position: relative;
 } */
 
-.text-white{
+.text-white {
     color: var(--white);
 }
 
 #contact {
-    
     padding-top: 60px;
     display: flex;
     justify-content: center;
@@ -978,18 +971,15 @@ canvas {
     line-height: 20px;
 }
 
-#world-img{
+#world-img {
     width: 100%;
     height: 700px;
-
 }
 
-.world-bg-img{
- 
+.world-bg-img {
     background-image: url(../images/contact-img-3.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    
 }
 
 .contact-col {

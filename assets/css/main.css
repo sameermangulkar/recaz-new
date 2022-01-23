@@ -866,12 +866,12 @@ canvas {
 /* Testimonials-End */
 
 /* contact-section-start */
-#pre-contact-bg-img{
+/* #pre-contact-bg-img{
     background-size: cover;
     background-image: url(../images/contact-img-3.png);
     backdrop-filter: blur;
     position: relative;
-}
+} */
 
 .text-white{
     color: var(--white);
@@ -978,9 +978,24 @@ canvas {
     line-height: 20px;
 }
 
+#world-img{
+    width: 100%;
+    height: 700px;
+
+}
+
+.world-bg-img{
+ 
+    background-image: url(../images/contact-img-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
 .contact-col {
     width: 570px;
     height: 500px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
 }

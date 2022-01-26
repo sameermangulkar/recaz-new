@@ -53,7 +53,7 @@ body {
 .header-bg {
     background: var(--white);
     color: var(--text-base-color);
-    padding: 10px 0px;
+    padding: 20px 0px;
     transition: all ease-in 200ms;
 }
 

@@ -54,7 +54,7 @@
 
 .slideshow-nav {
     position: absolute;
-    bottom: 50%;
+    bottom: 45%;
     width: 100vw;
     min-width: 100vw !important;
     font-size: 30px;
@@ -84,7 +84,7 @@
 .bg7,
 .bg8 {
     background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
+    background-attachment: fixed !important;
     background-position: center center !important;
     background-size: cover !important;
     background-image: url("../images/sliders/1-general.jpeg");
@@ -144,11 +144,13 @@
     font-size: 16px;
     background: var(--text-base-color);
     display: flex;
+    height: 50px;
     justify-content: center;
     align-items: center;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     background: var(--brand-color);
     color: var(--white);
 }
@@ -162,6 +164,7 @@
     cursor: pointer;
     font-size: 20px;
     padding: 0 0 20px 0;
+    color: var(--white);
 }
 
 .arrow a:hover {

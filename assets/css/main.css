@@ -645,6 +645,7 @@ canvas {
     object-fit: cover;
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
     transition: all ease-in 200ms;
+    filter: grayscale(1);
 }
 
 .inner-img {
@@ -668,7 +669,6 @@ canvas {
     top: 225px;
     transition: all ease-in 200ms;
     z-index: 12;
-    filter: grayscale(1);
 }
 
 .about-box .about-content {

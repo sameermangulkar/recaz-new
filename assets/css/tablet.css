@@ -1,0 +1,116 @@
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    /* body {
+        background: blue;
+    } */
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .header .container h3{
+        width: 100%;
+        font-size: 22px;
+        display: inline-block;
+    }
+
+    .header .container h3 span {
+        letter-spacing: 7px;
+    }
+
+
+    .bg1,
+    .bg2,
+    .bg3,
+    .bg4,
+    .bg5,
+    .bg6,
+    .bg7,
+    .bg8 {
+        width: 100vw;
+        max-width: 100vw;
+        height: 100vh;
+        min-height: 100vh !important;
+    }
+
+    .slide-text h2 {
+        display: none;
+    }
+     
+    .header nav {
+        display: none;
+    }
+
+    .contact-section .contact-sect-title h2 {
+        color: var(--text-base-color) !important;
+        width: 100%;
+        display: inline-block;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .contact-section .contact-sect-title p {
+        width: 64%;
+    }
+
+     .clients .swiper-slide style {
+         padding: auto;
+     }
+
+     
+
+
+     .footer .footr-column-1,
+     .footer .footr-column-2,
+     .footer .footr-column-3,
+     .footer .footr-column-4 {
+         width: 100%;
+         height: 290px;
+     }
+
+       .footer .container {
+           display: flex;
+           flex-wrap: wrap;
+       }
+
+         .footer .footr-column-3{
+             padding-top: 30px;
+         }
+
+           .footer .footr-column-1 h3{
+               width: 400px;
+           }
+
+
+           .footer .footr-column-2 h4,
+           .footer .footr-column-3 h4 {
+               margin-left: 0;
+           }
+
+           .footer .footr-column-2 ul li a,
+           .footer .footr-column-3 ul li a {
+               margin-left: -32px;
+           }
+
+           .footr-column-4 .span {
+               margin-bottom: 15px;
+           }
+
+           .footr-column-4 input[type="email"] {
+               margin-bottom: 50px;
+           }
+
+           .social-links {
+               position: absolute;
+               bottom: 0;
+           }
+
+
+           .footer .footr-bootm .copyright {
+               margin-right: 0px;
+           }
+
+           .footer .footr-bootm ul {
+               display: none;
+           }
+}

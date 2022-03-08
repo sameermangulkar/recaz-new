@@ -1,0 +1,138 @@
+
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+    body {
+        /* background: red !important; */
+        color: var(--text-base-color) !important;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .header .container h3 {
+        display: block;
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .header .container h3 span{
+        letter-spacing: 7px;
+    }
+
+    .header nav{
+        display: none;
+    }
+
+    .bg1,
+    .bg2,
+    .bg3,
+    .bg4,
+    .bg5,
+    .bg6,
+    .bg7,
+    .bg8 {
+        width: 100vw;
+        height: 3vh;
+    }
+
+    .slide-text h2{
+        display: none;
+    }
+    
+    .contact-section{
+        display: flex;
+        position: relative;
+    }
+
+    .contact-section .contact-sect-title{
+        color: var(--text-base-color) !important;
+        display: block;
+    }
+
+    .contact-section .contact-sect-title h2{
+        color: var(--text-base-color) !important;
+        width: 100%;
+        display: inline-block;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .contact-section .contact-sect-title h2::after{
+        display: block;
+    }
+
+    .contact-section .contact-sect-title p{
+        width: 48%;
+    }
+
+    .clients .swiper-slide style{
+        padding: 0;
+
+    }
+
+    .clients .swiper-slide img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer{
+        height: auto;
+    }
+
+    .footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .footr-column-1,
+    .footer .footr-column-2,
+    .footer .footr-column-3,
+    .footer .footr-column-4{
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer .footr-column-2 h4,
+    .footer .footr-column-3 h4{
+        margin-left: 0;
+    }
+
+    .footer .footr-column-2 h4,
+    .footer .footr-column-3 h4,
+    .footer .footr-column-4 h4{
+        margin-top: 40px;
+    }
+
+    .footer .footr-column-2 ul li a,
+    .footer .footr-column-3 ul li a{
+        margin-left: -32px;
+    }
+
+    .footr-column-4 .span{
+        margin-bottom: 15px;
+    }
+
+    .footr-column-4 input[type="email"]{
+        margin-bottom: 50px;
+    }
+
+    .social-links{
+        position: absolute;
+        bottom: 0;
+    }
+
+
+    .footer .footr-bootm .copyright{
+        margin-right: 0px;
+        margin-left: -60px;
+    }
+
+    .footer .footr-bootm ul{
+        display: none;
+    }
+
+}

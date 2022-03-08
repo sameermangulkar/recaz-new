@@ -73,44 +73,44 @@ body {
 
 .header .container h3 {
     display: inline-block;
-    width: 400px;
+    width: 250px;
     color: var(--text-base-color);
     font-family: var(--heading-font);
     font-weight: bold;
     letter-spacing: 4px;
-    font-size: 24px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 10px;
     transform: translateY(11px);
 }
 
 .header-bg.scroll .container h3 {
-    font-size: 25px;
+    font-size: 15px;
     margin-top: 30px;
     transform: translateY(-10px);
 }
 
 .header .container h3 img {
-    width: 65px;
-    height: 65px;
+    width: 42px;
+    height: 42px;
     display: block;
     float: left;
-    margin-right: 15px;
-    margin-top: -15px;
+    margin-right: 10px;
+    margin-top: -5px;
     transition: all ease 200ms;
 }
 
 .header-bg.scroll .container h3 img {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     margin-right: 10px;
-    margin-top: -8px;
+    /* margin-top: -8px; */
 }
 
 .header .container h3 span {
     display: block;
-    font-size: 9px;
-    font-weight: 500;
-    letter-spacing: 8.5px;
+    font-size: 7px;
+    font-weight: 400;
+    letter-spacing: 4.9px;
     padding-top: 10px;
     color: var(--text-base-color);
     transition: all ease 200ms;
@@ -119,13 +119,15 @@ body {
 .header-bg.scroll .container h3 span {
     font-size: 9px;
     padding-top: 5px;
-    letter-spacing: 8.5px;
+    letter-spacing: 4.5px;
 }
 
 .header nav {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 900px;
     text-align: center;
     margin-left: auto;
 }
@@ -136,16 +138,20 @@ body {
     width: auto;
     display: inline-block;
     position: relative;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 25px;
-    padding: 0 15px;
+    padding: 0 2.5px;
     overflow: hidden;
+}
+
+.padding-none{
+    padding: 0;
 }
 
 .header nav ul li a span {
     position: relative;
     display: inline-block;
-    font-weight: 900;
+    font-weight: 300;
     transition: transform 0.3s;
     -moz-transition: transform 0.3s;
     -webkit-transition: transform 0.3s;
@@ -153,7 +159,7 @@ body {
 
 .header nav ul li a span::before {
     content: attr(data-hover);
-    font-weight: 600;
+    font-weight: 100;
     color: var(--brand-color);
     display: inline-block;
     position: absolute;
@@ -187,14 +193,14 @@ body {
 .header nav ul ul,
 .header nav ul ul ul {
     width: 250px;
-    height: 320px;
+    height: 400px;
     padding: 10px;
     background: var(--white);
     border-radius: 4px;
     display: block;
     visibility: hidden;
     position: absolute;
-    top: calc(100% + 80px);
+    top: calc(100% + 10px);
     box-shadow: 0px 0px 30px rgb(127 137 161 / 10%);
     transition: 0.3s;
 }
@@ -202,7 +208,7 @@ body {
 .header nav ul ul ul {
     width: 260px;
     height: auto;
-    left: -269px;
+    left: 240px;
 }
 
 .header-bg.scroll nav ul ul {
@@ -220,7 +226,7 @@ body {
 }
 
 .header-bg.scroll nav ul li:hover > ul {
-    top: 158%;
+    top: 120%;
 }
 
 .header nav ul ul li {
@@ -245,6 +251,22 @@ body {
 
 .margin {
     margin-left: 99px;
+}
+
+.arrow-push{
+    transform: translateX(130px);
+}
+
+.arrow-push-1{
+    transform: translateX(150px);
+}
+
+.arrow-push-2{
+    margin-left: 21px;
+}
+
+.arrow-push-3{
+    margin-left: 65px;
 }
 
 .margin-1 {
@@ -656,13 +678,14 @@ canvas {
     transform: scale(1.1);
 }
 
-.about-box .about-small-box {
-    background: var(--white);
-}
+/* .about-box .about-small-box {
+    background: var(--brand-color);
+} */
 
 .about-box .about-small-box img {
     width: 65px;
     height: 65px;
+    background: var(--brand-color);
     border: 6px solid var(--white);
     position: absolute;
     left: 150px;
@@ -859,6 +882,74 @@ canvas {
 
 /* Testimonials-End */
 
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+    padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+    width: 80%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+    transform: translateX(-50px);
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #e03a3c;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #e03a3c;
+}
+
+.portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(17, 17, 17, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+    margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+    padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+    padding: 0;
+}
+
+
+
 /* contact-section-start */
 /* #pre-contact-bg-img{
     background-size: cover;
@@ -943,6 +1034,7 @@ canvas {
 .contact-section .contact-sect-title {
     padding-bottom: 25px;
     position: relative;
+    color: var(--text-base-color) !important;
 }
 
 .contact-section .contact-sect-title h2 {
@@ -953,6 +1045,7 @@ canvas {
     text-transform: uppercase;
     position: relative;
     display: inline-block;
+    color: var(--text-base-color) !important;
 }
 
 .contact-section .contact-sect-title h2::after {
@@ -1431,6 +1524,10 @@ canvas {
 .footer .footr-column-2 ul li a:hover,
 .footer .footr-column-3 ul li a:hover {
     color: var(--brand-color);
+}
+
+.push-left{
+    margin-left: 18px;
 }
 
 .footer .footr-bootm {

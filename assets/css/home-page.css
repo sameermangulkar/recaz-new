@@ -87,7 +87,7 @@
     background-attachment: fixed !important;
     background-position: center center !important;
     background-size: cover !important;
-    background-image: url("../images/sliders/1-general.jpeg");
+    background-image: url("../images/New-img-slider/IMG_4309.jpg");
     height: 100vh;
     min-height: 100vh;
     overflow: hidden;
@@ -99,28 +99,28 @@
 }
 
 .bg2 {
-    background-image: url("../images/sliders/2-paint-chemicals.jpeg");
+    background-image: url("../images/New-img-slider/IMG_4404.jpg");
 }
 
 .bg3 {
-    background-image: url("../images/sliders/3-texttiles-chimicals.jpeg");
+    background-image: url("../images/New-img-slider/IMG_4500.jpg");
 }
 
 .bg4 {
-    background-image: url("../images/sliders/4-food-chemicals.jpeg");
+    background-image: url("../images/New-img-slider/IMG_4510.jpg");
 }
 
 .bg5 {
-    background-image: url("../images/sliders/5-detergent-chimicals.jpeg");
+    background-image: url("../images/New-img-slider/IMG_4511.jpg");
 }
 .bg6 {
-    background-image: url("../images/sliders/6-cosmetic-chimicals.jpeg");
+    background-image: url("../images/New-img-slider/IMG_4518.jpg");
 }
 .bg7 {
-    background-image: url("../images/sliders/7-cosmetics.jpeg");
+    background-image: url("../images/New-img-slider/IMG_4532.jpg");
 }
 .bg8 {
-    background-image: url("../images/sliders/8-texttile-chemicals.jpeg");
+    background-image: url("../images/New-img-slider/IMG_5184.jpg");
 }
 
 .slider-center {

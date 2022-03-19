@@ -179,10 +179,12 @@ body {
     -moz-transform: translateY(-100%);
 }
 
+
 .header nav ul li a:hover {
     color: var(--brand-color);
     text-decoration: none;
 }
+
 
 .header nav ul li {
     display: inline-block;
@@ -217,7 +219,7 @@ body {
 
 .header nav ul li:hover > ul {
     visibility: visible;
-    top: 220%;
+    top: 130%;
     transition: 0.3s;
 }
 
@@ -227,6 +229,10 @@ body {
 
 .header-bg.scroll nav ul li:hover > ul {
     top: 120%;
+}
+
+.header-bg.scroll nav ul li ul li:hover > ul {
+    top: 20%;
 }
 
 .header nav ul ul li {
@@ -247,12 +253,15 @@ body {
 
 .header nav ul li i {
     font-size: 12px;
+    margin-left: 10px;
 }
+
+
 
 .margin {
     margin-left: 99px;
 }
-
+/* 
 .arrow-push{
     transform: translateX(130px);
 }
@@ -267,7 +276,7 @@ body {
 
 .arrow-push-3{
     margin-left: 65px;
-}
+} */
 
 .margin-1 {
     margin-left: 156px;

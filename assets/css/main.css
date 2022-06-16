@@ -1373,7 +1373,7 @@ canvas {
     font-size: 24px;
     font-weight: bold;
     line-height: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     letter-spacing: 4px;
     color: var(--text-base-color);
 }
@@ -1389,8 +1389,7 @@ canvas {
 }
 
 .footer .footr-column-1 h3 img {
-    width: 45px;
-    height: 45px;
+    width: 250px;
     margin-right: 10px;
     margin-top: -10px;
     float: left;
